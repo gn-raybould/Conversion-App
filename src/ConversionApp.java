@@ -22,6 +22,10 @@ public class ConversionApp{
             int choice = choiceScanner.nextInt();
             System.out.println();
 
+            if ((choice != 1) && (choice != 2) && (choice != 3) && (choice != 4) && (choice != 5)){
+                System.out.println("That is not an input that is recognized. Please try again.");
+            }
+            
             if (choice == 1){
                 //pounds to kilograms
                 System.out.println("You chose Pounds to Kilograms.");
